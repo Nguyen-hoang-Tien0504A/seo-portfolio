@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dự Án IoT: Hệ Thống An Ninh Nông Trại Thông Minh | Nguyễn Hoàng Tiến</title>
+    <meta name="description" content="Chi tiết dự án thiết kế hệ thống an ninh nông trại ứng dụng IoT. Sử dụng vi điều khiển ESP32, giao thức MQTT và Node-RED để cảnh báo chuyển động qua email.">
+</head>
+<body>
+
+    <a href="index.html">← Quay lại Trang chủ Portfolio</a>
+    
+    <h1>Hệ Thống An Ninh Nông Trại Thông Minh (IoT)</h1>
+    
+    <h2>1. Tổng quan dự án</h2>
+    <p>Đây là hệ thống tự động hóa giám sát và cảnh báo an ninh được thiết kế riêng cho môi trường nông trại, giúp phát hiện xâm nhập và gửi thông báo theo thời gian thực.</p>
+
+    <h2>2. Công nghệ và Giao thức</h2>
+    <ul>
+        <li><strong>Phần cứng:</strong> Vi điều khiển ESP32 tích hợp cảm biến phát hiện chuyển động.</li>
+        <li><strong>Giao thức truyền tải:</strong> Thiết lập MQTT Broker để xử lý dữ liệu tốc độ cao.</li>
+        <li><strong>Xử lý logic:</strong> Cấu hình JSON flow trên nền tảng Node-RED.</li>
+    </ul>
+
+    <h2>3. Luồng hoạt động (Workflow)</h2>
+    <p>Hệ thống liên tục giám sát trạng thái từ môi trường. Khi cảm biến phát hiện có chuyển động bất thường, ESP32 sẽ lập tức đẩy dữ liệu qua giao thức MQTT. Node-RED tiếp nhận tín hiệu on-chain này và tự động kích hoạt luồng gửi Email cảnh báo khẩn cấp đến thiết bị của chủ nông trại.</p>
+
+</body>
+</html>
